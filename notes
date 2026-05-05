@@ -1,2 +1,4 @@
 Section 4: Project and Users
-once starts, dont stop
+
+command example:
+oc get service    //oc is counterpart of kubectl for openshift
