@@ -1,8 +1,9 @@
 Module 1: MTA
 Migration Toolkit for Applications
 two levels: Administrator and Migration
-two phases: assess and analyze legacy applications for faster migration to OpenShift
+two phases: assess and analyze legacy applications during migration to OpenShift
 MTA analysis is used by organisation for:
 planning and work estimation;
 identifying migration issues and providing solutions;
 detailed reporting
+//next module is to refactor the sourcecode to fix those issues
