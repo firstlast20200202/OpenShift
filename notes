@@ -5,6 +5,3 @@ oc get service    //oc is counterpart of kubectl for openshift
 
 
 
-MTA: migration toolkit for applications
-two phases: Administrator and Migration
-assess and analyze legacy applications for faster migration to OpenShift
