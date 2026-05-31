@@ -8,4 +8,6 @@ identifying migration issues and providing solutions;
 detailed reporting
 //next module is to refactor the sourcecode to fix those issues
 
-Module 2: refactor based on MTA report
+Module 2: 
+refactor based on MTA report
+deploy to Kubernetes
