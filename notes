@@ -1,4 +1,7 @@
 Section 4: Project and Users
+two ways of deployment:
+1. add a yaml file straightaway
+2. import from git
 
 command example:
 oc get service    //oc is counterpart of kubectl for openshift
