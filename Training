@@ -1,4 +1,4 @@
-Module 1: MTA
+Module 1: assessment and analysis by MTA
 Migration Toolkit for Applications
 two levels: Administrator and Migration
 two phases: assess and analyze legacy applications during migration to OpenShift
@@ -8,4 +8,4 @@ identifying migration issues and providing solutions;
 detailed reporting
 //next module is to refactor the sourcecode to fix those issues
 
-Module 2: refactor
+Module 2: refactor based on MTA report
