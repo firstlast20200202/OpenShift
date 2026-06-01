@@ -3,6 +3,9 @@ ways of deployment:
 1. add a yaml file straightaway
 2. import from git (developer -> Add+ -> git repo, unavailable)
 
+deploying with CLI:
+
+
 command example:
 oc get service    //oc is counterpart of kubectl for openshift
 
