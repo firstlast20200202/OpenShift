@@ -1,0 +1,3 @@
+The difference of kubernetes and openshift is that kubernetes has replicaset, whereas openshift has replica controller.
+Replicaset supports set-based selector requirements;
+Replica controller supports equity-based selector requirements.
