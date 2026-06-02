@@ -1,3 +1,3 @@
 The difference of kubernetes and openshift is that kubernetes has replicaset, whereas openshift has replica controller.
-Replicaset supports set-based selector requirements;
-Replica controller supports equity-based selector requirements.
+1. Replicaset supports set-based selector requirements; replica controller supports equity-based selector requirements.
+2. you can swap out container images inside of your manifest or inside of your deployment config, whereas in s standard deployment, you need to do a rolling update.
