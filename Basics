@@ -1,5 +1,10 @@
+console.redhat.com/openshift
+create cluster
+
+
+
 Section 4: Project and Users
-ways of deployment:
+ways of deployment: via UI, via terminal
 1. add a yaml file straightaway
 2. import from git (developer -> Add+ -> git repo, unavailable)
 
