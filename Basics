@@ -1,5 +1,6 @@
 console.redhat.com/openshift
-create cluster
+create cluster via one o the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
+a project in openshift is more like a kubernetes namespace... so im assuming admin creates multiple namespaces and assign developers in different teams access to each namespace.
 
 
 
