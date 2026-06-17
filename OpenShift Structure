@@ -1,4 +1,3 @@
-console.redhat.com/openshift
 create cluster via one of the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
 a project in openshift is more like a kubernetes namespace... 
 
