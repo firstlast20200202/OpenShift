@@ -1,7 +1,44 @@
 console.redhat.com/openshift
-create cluster via one o the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
-a project in openshift is more like a kubernetes namespace... so im assuming admin creates multiple namespaces and assign developers in different teams access to each namespace.
+create cluster via one of the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
+a project in openshift is more like a kubernetes namespace... 
 
+OpenShift Cluster
+│
+├── Projects
+│     ├── Applications
+│     ├── Deployments
+│     ├── Services
+│     ├── Routes
+│     ├── ConfigMaps
+│     └── Secrets
+│
+├── Cluster-wide Resources
+│     ├── Nodes
+│     ├── StorageClasses
+│     ├── ClusterRoles
+│     └── Operators
+│
+└── Infrastructure
+      ├── Control Plane Nodes
+      └── Worker Nodes
+
+there's no more layer between cluster and project, but in enterprise it would commonly be built in this way:
+
+Cluster
+│
+├── Finance Team
+│     ├── finance-dev
+│     ├── finance-test
+│     └── finance-prod
+│
+└── Marketing Team
+      ├── mkt-dev
+      └── mkt-prod
+
+in this case Finance Team and Marketing Team are not a layer, it would be set up through:
+user groups
+RBAC
+naming conventions
 
 
 Section 4: Project and Users
