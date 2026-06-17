@@ -1,0 +1,6 @@
+ways of deployment: via UI, via terminal
+1. add a yaml file straightaway
+2. import from git (developer -> Add+ -> git repo, unavailable)
+
+deploying with CLI:
+
