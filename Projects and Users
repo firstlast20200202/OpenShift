@@ -1,3 +1,16 @@
+idap and aad (Azure AD) logins:
+they are part of authenntication
+
+User
+  ↓
+AAD / LDAP / GitHub / OIDC
+  ↓
+OpenShift OAuth Server
+  ↓
+OpenShift Cluster
+
+
+
 找不着developer -> add+
 
 ways of deployment: via UI, via terminal
