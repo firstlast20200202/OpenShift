@@ -19,3 +19,8 @@ ways of deployment: via UI, via terminal
 
 deploying with CLI:
 
+3 types of users:
+regular users
+system users: to interact with infrastructure, some are created by default
+service accounts
+
