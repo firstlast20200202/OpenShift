@@ -27,4 +27,4 @@ service accounts
 OpenShift master includes a built-in OAuth server for authenticating and authorising users into clusters
 for all-in-one mode of setup, the default of OAuth config value is AllowAllIdentityProvider in /etc/origin/master/master-config.yanl, it allows all users logging in without verifying passwords,
 if a user doesnt exist, it auto-creates it. 
-the value can be set to DenyAllIdentityProvider which would stop all users logging in, in this case, admin has to manually creates ans enables new users.
+the value can be set to DenyAllIdentityProvider which would stop all users logging in, in this case, admin has to manually create and enable new users.
