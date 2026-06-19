@@ -24,3 +24,4 @@ regular users
 system users: to interact with infrastructure, some are created by default
 service accounts
 
+OpenShift master includes a built-in OAuth server for authenticating and authorising users into clusters
