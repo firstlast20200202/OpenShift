@@ -1,4 +1,42 @@
 The difference of kubernetes and openshift is that kubernetes has replicaset, whereas openshift has replica controller.
 1. Replicaset supports set-based selector requirements; replica controller supports equity-based selector requirements.
-2. you can swap out container images inside of manifest or deployment config; whereas in a deployment which uses replicaset, rolling update is needed.
-Replica controller is not recommended.
+2. in OpenShift you can swap out container images inside of manifest or deployment config for upgrade or change it up etc.; whereas in a deployment which uses replicaset, rolling update is needed.
+Replica controller is not recommended...
+
+
+
+Image Streams: update deployments with tags
+1. tracks updates in image registry
+2. triggers image changes in deployments
+
+container registry: where images are stored and distributed
+
+image lifecycle:
+
+Source Code
+    ↓
+docker build
+    ↓
+Container Image
+    ↓
+docker push
+    ↓
+Registry
+    ↓
+docker pull
+    ↓
+   Pod
+
+commonly used public registry:
+1. Docker Hub: docker.io/library/nginx
+2. Red Hat Quay: quay.io/prometheus/prometheus
+
+commonly used private registry:
+1. Quay
+2. Docker Registry
+
+in regidtry it stores layers, manifest, metadata, tags, say, quay.io/company/myapp:v1
+quay.io      → Registry
+company      → Repository/Namespace
+myapp        → Image Name
+v1           → Tag
