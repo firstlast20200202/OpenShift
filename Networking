@@ -1,3 +1,4 @@
-internal communication between pods and services are facilitated by overlay networks
-external connectivity is achieved with routes and services
+in OpenShift, internal communication between pods and services are facilitated by overlay networks which are created using OpenvSwitch, external connectivity is achieved with routes and services.
+communicating with other pods with dynamic IP addresses is not ideal, that's why OpenShift has a built-in DNS server which helps map IP addresses to pods and services. this enables us to 
+use a pod name or service name to connect to database instead of IP addresses.
 
