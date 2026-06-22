@@ -1,1 +1,3 @@
+internal communication between pods and services are facilitated by overlay networks
+external connectivity is achieved with routes and services
 
