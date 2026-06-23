@@ -1,3 +1,7 @@
+CRC: CodeReady Containers
+CRC (aka OpenShift Local) is a tool that lets you run a single-node OpenShift cluster on your local machine
+without CRC, you need multiple VMs, networking setup, DNS and load balancers etc. with CRC, you need a laptop, a VM and OpenShift. 
+
 create cluster via one of the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
 a project in openshift is more like a kubernetes namespace... 
 
