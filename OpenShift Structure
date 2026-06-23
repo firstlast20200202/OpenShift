@@ -5,6 +5,7 @@ $ crc
 $ crc setup
 $ crc start
 open console: https://console-openshift-console.apps-crc.testing/dashboards
+if your computer is not powerful enough for CRC, you can use OpenShift sandbox which would be free for 30 days 
 
 create cluster via one of the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
 a project in openshift is more like a kubernetes namespace... 
