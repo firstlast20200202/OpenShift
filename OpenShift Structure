@@ -2,7 +2,7 @@ CRC: CodeReady Containers
 CRC (aka OpenShift Local) is a tool that lets you run a single-node OpenShift cluster on your local machine
 without CRC, you need multiple VMs, networking setup, DNS and load balancers etc. with CRC, you need a laptop, a VM and OpenShift. 
 $ crc
-$ crc setup
+$ crc setup            install OpenShift
 $ crc start
 open console: https://console-openshift-console.apps-crc.testing/dashboards
 if your computer is not powerful enough for CRC, you can use OpenShift sandbox which would be free for 30 days 
