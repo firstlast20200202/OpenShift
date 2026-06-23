@@ -1,5 +1,11 @@
 In OpenShift, internal communication between pods and services are facilitated by overlay networks which are created using OpenvSwitch standard, external connectivity is achieved with routes and services.
 Communicating with other pods with dynamic IP addresses is not ideal, that's why OpenShift has a built-in DNS server which helps map IP addresses to pods and services. this enables us to 
 Use a pod name or service name to connect to database instead of IP addresses.
-OpenShift DNS leverages SkyDNS to implement DNS functionality on top of etcd. These days Kubernetes and OpenShift use CoreDNS instead of SkyDNS.
+
+OpenShift DNS leverages SkyDNS to implement DNS functionality on top of etcd. 
 SkyDNS is an early DNS service that was used by Kubernetes to provide service discovery for Services and Pods. Its job was to translate Kubernetes service names into IP addresses.
+These days Kubernetes and OpenShift use CoreDNS instead of SkyDNS.
+
+In OpenShift, establishing connectivity between pods directly is not recommanded, instead it recoomands using services which would act as a load balancer. 
+OpenShift software-defined networking provides different kinds of plug-ins. The default plugin configured is the ovs-subnet that provides network connectivity between pods. To prevent pods
+in different projects from communicating with each other, OpenShift provides the additional ovs-multitenant plugin which assigns each project a unique virtual network ID. 
