@@ -1,1 +1,4 @@
+Resource allocation: 
+for a namespace, requests and limits of memory and CPU would be defined; and for an application, requests and limits of memory would be defined, requests of CPU would be defined, BUT 
+limits of CPU shouldnt be defined. because redundant memory will be given back to the resource pool, but redundant CPU will not be given back to the CPU pool. 
 
