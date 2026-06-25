@@ -5,3 +5,4 @@ limits of CPU shouldnt be defined. because redundant memory will be given back t
 Resource quota:
 it's a concept on a project level (namespace in OpenShift), not at the pod level. It limits the total resources such as pods in a namespace.
 
+catalog:
