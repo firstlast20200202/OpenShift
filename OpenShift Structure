@@ -13,6 +13,8 @@ a project in openshift is more like a kubernetes namespace...
 
 login with redhat account and you can create a cluster in this fleet page: https://console.redhat.com/openshift/overview
 after finishing creating the cluster login with developer or kubeadmin account then you'll see the cluster page: https://console-openshift-console.apps-crc.testing/dashboards 
+the cluster page shows up a selector with 'developer' and 'administrator' options on top left in the tutorial video, but actually there's no such selector anymore, instead 
+it shows label 'core platform' which would be the new UI. 
 
 OpenShift Cluster
 │
