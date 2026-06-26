@@ -16,8 +16,8 @@ ways of deployment:
 3. via CLI: 
     a. git clone to local machine
     b. get into the application folder
-    c. oc apply -f ./file-name.yaml    //in Linux; .\ in windows
-
+    c. oc apply -f ./file-name.yaml      //     ./ in Linux      OR     .\ in windows     OR     just get into the folder and run $ oc apply -f file-name.yaml 
+    then the application link would show up in Routes -> Location
 
 
 3 types of users:
