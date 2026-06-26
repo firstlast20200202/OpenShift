@@ -20,6 +20,7 @@ next step is installing CLI tool:
 download from this link: https://console.redhat.com/openshift/downloads
 then in terminal run $ oc login --web
 then login with developer or kubeadmin account in the web that pops up.
+verify: run $ oc get pods
 
 OpenShift Cluster
 │
