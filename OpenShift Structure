@@ -7,11 +7,12 @@ $ crc start
 open console: https://console-openshift-console.apps-crc.testing/dashboards
 note: if your computer is not powerful enough for CRC, you can use OpenShift sandbox which would be free for 30 days 
 
--> Demo - Web and CLI ~~~~~~~~~~~~~~
-
 once crc setup crc start has been finished, next step would be creating a cluster:
 create cluster via one of the cloud platforms, in reality I wouldnt have access to do it since a cluster inlcudes everything like controlplane and worker nodes etc., whereas 
 a project in openshift is more like a kubernetes namespace... 
+
+login ith redhat account and you can create a cluster in this fleet page: https://console.redhat.com/openshift/overview
+after finishing creating the cluster login with deeloper or kubeadmin then you'll see the cluster page: https://console-openshift-console.apps-crc.testing/dashboards 
 
 OpenShift Cluster
 │
