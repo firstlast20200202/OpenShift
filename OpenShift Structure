@@ -16,7 +16,7 @@ after finishing creating the cluster login with developer or kubeadmin account t
 the cluster page shows up a selector with 'developer' and 'administrator' options on top left in the tutorial video, but actually there's no such selector anymore, instead 
 it shows label 'core platform' which would be the new UI. 
 
-next step is installing oc: 
+next step is installing oc: https://console.redhat.com/openshift/downloads
 
 OpenShift Cluster
 │
