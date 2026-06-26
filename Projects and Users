@@ -13,6 +13,10 @@ OpenShift Cluster
 ways of deployment: 
 1. via UI: add a yaml file straightaway
 2. import from a Git repo
+3. via CLI: 
+    a. git clone to local machine
+    b. get into the application folder
+    c. oc apply -f ./file-name.yaml    //in Linux; .\ in windows
 
 
 
