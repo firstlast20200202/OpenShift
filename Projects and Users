@@ -13,11 +13,12 @@ OpenShift Cluster
 ways of deployment: 
 1. via UI: add a yaml file straightaway
 2. import from a Git repo
-3. via CLI: 
+3. via CLI: would be the easiest way
     a. git clone to local machine
     b. get into the application folder
     c. oc apply -f ./file-name.yaml      //     ./ in Linux      OR     .\ in windows     OR     just get into the folder and run $ oc apply -f file-name.yaml 
     then the application link would show up in Routes -> Location
+
 
 
 3 types of users:
