@@ -10,14 +10,11 @@ OpenShift OAuth Server
 OpenShift Cluster
 
 
+ways of deployment: 
+1. via UI: add a yaml file straightaway
+2. import from a Git repo
 
-找不着developer -> add+
 
-ways of deployment: via UI, via terminal
-1. add a yaml file straightaway
-2. import from git (developer -> Add+ -> git repo, unavailable)
-
-deploying with CLI:
 
 3 types of users:
 regular users
