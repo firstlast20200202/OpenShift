@@ -31,7 +31,8 @@ for all-in-one mode of setup, the default of OAuth config value is AllowAllIdent
 if a user doesnt exist, it auto-creates it. 
 the value can be set to DenyAllIdentityProvider which would stop all users logging in, in this case, admin has to manually create and enable new users.
 
-oc get users
+$ oc get users
+
 there are default projects created, but system admin couldnt login UI to see them when running $ oc login -u system:admin, so a new clusteradmin user needs to be created and enabled by 
 login UI with username 'cluster-admin-blabla'
 $ oc admin policy add-cluster-role-to-user cluster-admin cluster-admin-blabla
