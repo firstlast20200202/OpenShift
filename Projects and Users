@@ -33,6 +33,6 @@ the value can be set to DenyAllIdentityProvider which would stop all users loggi
 
 oc get users
 there are default projects created, but system admin couldnt login UI to see them when running $ oc login -u system:admin, so a new clusteradmin user needs to be created and enabled by 
-$ login UI with username 'cluster-admin-blabla'
+login UI with username 'cluster-admin-blabla'
 $ oc admin policy add-cluster-role-to-user cluster-admin cluster-admin-blabla
 then built-in projects would be visible
