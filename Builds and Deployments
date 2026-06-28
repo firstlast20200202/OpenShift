@@ -43,13 +43,17 @@ v1           → Tag
 
 
 
+Build configuration stratefy:
 there are 4 strategies to create the build configuration:
 1. source to image: a tool to create a docker-formatted container image, then injects source code into it
 2. pipeline: defined in Jenkinsfile, and manged via OpenShift
 3. docker
 4. custom: define a custom builder image which is a plain docker-formatted container image embedded with build process logic
 
+Build input:
+git -> dockerfile -> binary -> image -> input secrets -> external artifacts (not recommanded)
 
+buildah: a tool that builds container images
 
 
 
