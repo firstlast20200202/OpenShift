@@ -24,6 +24,17 @@ ImageStream updates deployments with tags
 1. tracks updates in image registry (say, in quay.io/company/myapp@sha256:abc123... the 'sha256:...' part) 
 2. triggers image changes in deployments
 
+ImageStream workflow:
+
+New image pushed
+        ↓
+ImageStream updated
+        ↓
+Deployment automatically rolls out
+        ↓
+     New Pods
+
+
 container registry: where images are stored and distributed
 
 image lifecycle:
