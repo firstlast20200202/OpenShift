@@ -82,6 +82,10 @@ git -> dockerfile -> binary -> image -> input secrets -> external artifacts (not
 
 buildah: a tool that builds container images
 
-
+buildConfig:
+1. create a buildConfig by adding a yaml file in OpenShift
+2. run oc new-app <app-link-in-github> in terminal
+it would show that buildconfig.build.openshift.io "blabla" created in the output, that's how to create a build config manually
+actually when create an application, a build config will be auto-created
 
 
