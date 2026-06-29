@@ -5,8 +5,23 @@ Replica controller is not recommended...
 
 
 
-Image Streams: update deployments with tags
-1. tracks updates in image registry
+ImageStreams: 
+it's just an extra layer between application and image in OpenShift, in yaml file instead of 'image: quay.io/company/myapp:v1', you can use an ImageStreamTag 'myapp:latest'
+without an ImageStream:
+Deployment
+     ↓
+Container Image
+(quay.io/company/myapp:v1)
+
+with an ImageStream:
+Registry
+     ↓
+ImageStream
+     ↓
+Deployment
+
+ImageStream updates deployments with tags
+1. tracks updates in image registry (say, in quay.io/company/myapp@sha256:abc123... the 'sha256:...' part) 
 2. triggers image changes in deployments
 
 container registry: where images are stored and distributed
