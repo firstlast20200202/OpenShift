@@ -35,6 +35,7 @@ Deployment automatically rolls out
      New Pods
 
 
+
 container registry: where images are stored and distributed
 
 image lifecycle:
