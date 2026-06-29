@@ -80,6 +80,7 @@ actually when create an application, a build config will be auto-created
 initiate a build config in terminal:
 $ oc start-build <build-config-name>
 
+get into OpenShift and click the build config, select 'start build' in the ellipsis, after it's finished, the created image can be found in 'output to' in Details
 
 Build configuration stratefy:
 there are 4 strategies to create the build configuration:
