@@ -70,7 +70,8 @@ v1           → Tag
 
 
 
-buildConfig:
+buildConfig: 
+the whole purose of having build config is to automate the process of building container images from either source code or another image
 1. create a buildConfig by adding a yaml file in OpenShift
 2. run $ oc new-app <app-link-in-github> in terminal
 it would show that buildconfig.build.openshift.io "blabla" created in the output, that's how to create a build config manually
