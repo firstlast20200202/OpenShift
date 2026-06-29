@@ -77,11 +77,11 @@ the whole purose of having build config is to automate the process of building c
 it would show that buildconfig.build.openshift.io "blabla" created in the output, that's how to create a build config manually
 actually when create an application, a build config will be auto-created
 
-initiate a build config in terminal:
+then start a build in terminal:
 $ oc start-build <build-config-name>
+alternatively start a build in OpenShift UI:
+click the build config, select 'start build' in the ellipsis, after it's finished, the created image can be found in 'output to' in Details
 
-get into OpenShift and click the build config, select 'start build' in the ellipsis, after it's finished, the created image can be found in 'output to' in Details
-??????????????????????????????????????????????????????????? are they the same or the next step
 
 Build configuration stratefy:
 there are 4 strategies to create the build configuration:
