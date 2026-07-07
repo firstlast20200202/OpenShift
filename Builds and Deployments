@@ -125,3 +125,11 @@ Your own Custom Builder Image
        ├── Package the application
        ├── Run tests
        └── Generate the final container image
+
+
+build triigers:
+to avoid manually start a build in OpenShift, there are 3 types of build triggers:
+1. Webhooks: github, gitlab, bitbucket etc. as soon as code gets updated, it auto-triggers the build in OpenShift
+2. ImageChange: the image stream tag change creates an automatic build, not recommanded for dev environment, staging environment is fine
+3. ConfigChange
+these values can be setup in BuildConfigs -> YAML -> triggers.type, and can be seen in Builds -> TriggeredBy or YAML
