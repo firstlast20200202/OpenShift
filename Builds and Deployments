@@ -85,17 +85,43 @@ click the build config, select 'start build' in the ellipsis, after it's finishe
 
 Build configuration stratefy:
 there are 4 strategies to create the build configuration:
-1. source to image: a tool to create a docker-formatted container image, then injects source code into it
+1. S2I (source to image): a tool to create a docker-formatted container image, then injects source code into it
 2. pipeline: defined in Jenkinsfile, and manged via OpenShift
-3. docker
+3. docker/buildah build
 4. custom: define a custom builder image which is a plain docker-formatted container image embedded with build process logic
 
 Build input:
 git -> dockerfile -> binary -> image -> input secrets -> external artifacts (not recommanded)
 
-buildah: a tool that builds container images
-
-
-S2I: https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html/using_images/source-to-image-s2i
+1. S2I: https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html/using_images/source-to-image-s2i
 it takes code and creates a docker-compliant container image, then push that image to a docker registry.
 benefits: dev dont need to create a docker file; it's more secure since dev can create permissions, authentication, authorisation to decide who can create that container image.
+
+2. buildah: a tool that builds container images
+
+3. S2I vs custom build:
+S2I:
+Git Repository
+       │
+       ▼
+OpenShift Official Builder Image
+(Java, Node.js, Python, etc.)
+       │
+       ▼
+Compile the source code
+       │
+       ▼
+Generate a Container Image
+
+custom build:
+Git Repository
+       │
+       ▼
+Your own Custom Builder Image
+       │
+       ├── Download dependencies
+       ├── Execute custom scripts
+       ├── Compile the application
+       ├── Package the application
+       ├── Run tests
+       └── Generate the final container image
