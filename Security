@@ -21,3 +21,6 @@ mapping后，用户无论使用 GitHub、LDAP 还是 HTPasswd 登录，最终都
 2.调试认证问题
 3.修复错误的映射
 4.自动化脚本
+
+oc delete user mike
+
