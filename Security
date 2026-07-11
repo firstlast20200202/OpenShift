@@ -1,8 +1,8 @@
-oc create user mike
+$ oc create user mike
 
-oc create identity allow_all: mike                      //allow_all is a identity provider name, other names would be ldap, github, HTPasswd etc.
+$ oc create identity allow_all: mike                      //allow_all is a identity provider name, other names would be ldap, github, HTPasswd etc.
 
-oc create useridentitymapping allow_all: mike   
+$ oc create useridentitymapping allow_all: mike   
 
 Identity：外部身份（例如 GitHub、LDAP、HTPasswd 中的账号）。
 User：OpenShift 内部的用户对象。
@@ -22,5 +22,17 @@ mapping后，用户无论使用 GitHub、LDAP 还是 HTPasswd 登录，最终都
 3.修复错误的映射
 4.自动化脚本
 
-oc delete user mike
+$ oc delete user mike
+
+
+service account: 
+have direct access to APIs
+should be created for a specific job, otherwise the default service account which is like a cluster admin would be used
+$ oc create sa mikesa
+$ oc get sa
+$ oc policy add-role-to-user view system: serviceaccount: sockshop: mikesa                            
+$ oc policy add-role-to-group view system: serviceaccount sockshop -n sockshop                        //？？？？？？
+
+
+
 
