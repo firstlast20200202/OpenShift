@@ -1,3 +1,5 @@
 oc create user mike
 
-oc create identity allow_all: mike
+oc create identity allow_all: mike                      //allow_all is a identity provider name, other names would be ldap, github, HTPasswd etc.
+
+oc create useridentitymapping allow_all: mike   
