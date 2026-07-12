@@ -9,3 +9,12 @@ These days Kubernetes and OpenShift use CoreDNS instead of SkyDNS.
 In OpenShift, establishing connectivity between pods directly is not recommanded, instead it recoomands using services which would act as a load balancer. 
 OpenShift software-defined networking provides different kinds of plug-ins. The default plugin configured is the ovs-subnet that provides network connectivity between pods. To prevent pods
 in different projects from communicating with each other, OpenShift provides the additional ovs-multitenant plugin which assigns each project a unique virtual network ID. 
+
+create a service yaml file to access the application internally:
+the selector links the service to the pods hosting the application
+ClusterIP is auto-assigned during creation, dont need to specify in the yaml file; after creation, we can access to the applciation using this ClusterIP internally like $ curl http://172.30.163.74:8080
+
+create a route yaml file to access the application externally:
+a hostname would be auto-generated based on the application name
+if you want your own hostname, just make sure that the extrenal DNS is configured to route users to the OpenShift cluster when they try to access the url, so the route would redirect users 
+to the right application based on the hostname
