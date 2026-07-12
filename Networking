@@ -16,5 +16,16 @@ ClusterIP is auto-assigned during creation, dont need to specify in the yaml fil
 
 create a route yaml file to access the application externally:
 a hostname would be auto-generated based on the application name
-if you want your own hostname, just make sure that the extrenal DNS is configured to route users to the OpenShift cluster when they try to access the url, so the route would redirect users 
+if you want your own hostname, just make sure that the extrenal DNS is configured to route users to the OpenShift cluster when they try to access the url, so the route would re-direct users 
 to the right application based on the hostname
+
+scaling:
+say, the function of your application is showing different colors each time you refresh a web page, and when there's only one replicaset, it might show the web page in red, then you scale up
+from 1 to 2 replicasets, you refresh the web page again and again, it still shows up the color from the first pod, it supposed to be displaying alternatively between first and second pods.
+the reason is: by default, sticky sessions are implemented using the source load-balancing strategy, meaning the IP address of the user is recorded by the route and the user is re-directed 
+to the same application instance each time. 
+to change this behaviour, we need to change load balancing strategy and cookie setting in the route yaml file as below:
+metadata:
+  annotations:
+    haproxy.router.openshift.io/balance: roundrobin
+    haproxy.router.openshift.io/disable_cookies: 'true'
