@@ -29,3 +29,11 @@ metadata:
   annotations:
     haproxy.router.openshift.io/balance: roundrobin
     haproxy.router.openshift.io/disable_cookies: 'true'
+
+HPA: 
+two methods: command line and yaml file
+say, the project name is 'front-end'
+1. $ oc autoscale deployment/front-end --min=2 --max=7
+2. HPA yaml file
+spec.scaleTargetRef.name: front-end    
+when create HPA with this file, it would fail, because HPA is being repeatedly created for the same project. so just 'Remove HPA' from the deployment list for the project.
