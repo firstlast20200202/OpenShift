@@ -1,3 +1,1 @@
-network:demos
-
 storage: demos
