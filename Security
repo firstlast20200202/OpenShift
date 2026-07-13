@@ -4,23 +4,8 @@ $ oc create identity allow_all: mike                      //allow_all is a ident
 
 $ oc create useridentitymapping allow_all: mike   
 
-Identity：外部身份（例如 GitHub、LDAP、HTPasswd 中的账号）。
-User：OpenShift 内部的用户对象。
-UserIdentityMapping：把两者关联起来。
-mapping后，用户无论使用 GitHub、LDAP 还是 HTPasswd 登录，最终都会映射到同一个 OpenShift User mike。
-
-在 OpenShift 4.x 中，管理员一般只需要：
-1.配置 Identity Provider（LDAP、GitHub、HTPasswd 等）。
-2.用户第一次登录。
-3.OpenShift 自动创建：
-    User
-    Identity
-    UserIdentityMapping
-手动使用 oc create useridentitymapping 主要出现在：
-1.测试环境
-2.调试认证问题
-3.修复错误的映射
-4.自动化脚本
+Normally, OpenShift creates the Identity, User, and the mapping automatically when a user logs in through an Identity Provider. You only manually create them separately for testing, 
+troubleshooting, or special cases.
 
 $ oc delete user mike
 
