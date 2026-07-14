@@ -22,4 +22,4 @@ $ oc get groups
 
 
 RBAC:
-a role needs to be binding to a user or a service account, we assign peermissions to roles
+a role needs to be binding to a user or a service account, we assign permmissions to roles
