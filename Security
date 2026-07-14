@@ -21,3 +21,5 @@ $ oc adm groups new mikesgroup mike michelle                                    
 $ oc get groups
 
 
+RBAC:
+a role needs to be binding to a user or a service account, we assign peermissions to roles
