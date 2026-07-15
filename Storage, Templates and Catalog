@@ -5,6 +5,19 @@ limits of CPU shouldnt be defined. because redundant memory will be given back t
 Resource quota:
 it's a concept on a project level (namespace in OpenShift), not at the pod level. It limits the total resources such as pods in a namespace.
 
+Dynamic storage:
+A pods cant manage storage directly, it can do it through CSI (Container Storage Interface) which can talk to a storage provider directly with a provisioner. 
+dynamic storage workflow:
+PVC
+ ↓
+StorageClass (defines the rules of creating storage)         
+ ↓
+CSI Dynamic Provisioner
+ ↓
+PV
+ ↓
+Pod
+
 catalog:
 a template can be created and customised by creating a yaml file with kind: Template, then $ oc create -f <file-name>.yaml
 to develop the yaml contents for a service, $ oc export service db, which would export the yaml configuration for the service, which can be used to create a template
