@@ -37,4 +37,5 @@ SecurityContext:
 by default privileged: false, 'true' allows a container to run with almost the same privileges as the host's root user
 rivileged access would be required to access some system components like CNI plugins (Calico, Flannel, etc.), CSI storage drivers etc.
 
+CRD, your own controllers, operators are the same things
 to create CRD: KubeBuilder in Go
