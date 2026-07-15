@@ -11,13 +11,21 @@ PV
  ↓
 Pod
 
+static storage workflow:
+Administrator prepares the storage
+Developer requests storage
+Kubernetes binds PVC to the matching PV
+
+
 Resource allocation: 
 for a namespace, requests and limits of memory and CPU would be defined; and for an application, requests and limits of memory would be defined, requests of CPU would be defined, BUT 
 limits of CPU shouldnt be defined. because redundant memory will be given back to the resource pool, but redundant CPU will not be given back to the CPU pool. 
 
+
 Resource quota: 
 to avoid requests and limits of CPU and memory in every deployment 
 it's a concept on a project level (namespace in OpenShift), not at the pod level. It limits the total resources such as pods in a namespace.
+
 
 catalog:
 a template can be created and customised by creating a yaml file with kind: Template, then $ oc create -f <file-name>.yaml
