@@ -23,3 +23,9 @@ $ oc get groups
 
 RBAC:
 a role needs to be binding to a user or a service account, we assign permmissions to roles
+
+ConfigMap:
+a key-value pair 
+
+Secrets:
+by default Kubernetes uses OPAC standard which stores the secret in plain text, that's the reason that Kubernetes secrets are recoomanded in real world
