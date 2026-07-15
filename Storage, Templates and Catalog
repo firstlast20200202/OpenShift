@@ -12,9 +12,9 @@ PV
 Pod
 
 static storage workflow:
-Administrator prepares the storage
-Developer requests storage
-Kubernetes binds PVC to the matching PV
+step 1: administrator prepares the storage
+step 2: developer requests storage
+step 3: kubernetes binds PVC to the matching PV
 
 
 Resource allocation: 
